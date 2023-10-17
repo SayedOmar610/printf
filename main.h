@@ -7,9 +7,6 @@
 #include <limits.h>
 #include <unistd.h>
 
-#define OUTPUT_BUF_SIZE 1024
-#define BUF_FLUSH -1
-
 /**
  * struct format - structure
  *
@@ -30,6 +27,3 @@ int printf_int(va_list args);
 int printf_precentage(void);
 
 #endif
-
-
-
