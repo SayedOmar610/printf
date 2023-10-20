@@ -11,7 +11,8 @@ int _printf(const char *format, ...)
 {
 	match m[] = {
 		{"%c", printf_char}, {"%s", printf_string},
-	{"%%", printf_precentage}, {"%d", printf_int}, {"%i", printf_int}};
+	{"%%", printf_precentage}, {"%d", printf_int}, {"%i", printf_int}
+	};
 
 	va_list args;
 	int i = 0;
@@ -22,9 +23,9 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 Here:
-	while (format[i] = '\0')
+	while (format[i] != '\0')
 	{
-		j = 5;
+		j = 4;
 		while (j >= 0)
 		{
 			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
