@@ -10,8 +10,9 @@
 int _printf(const char *format, ...)
 {
 	match m[] = {
-		{"%c", printf_char()}, {"%s", printf_string()},
-	{"%%", printf_precentage()}, {"%d", printf_int()}, {"%i", printf_int()}
+		{"%c", printf_char(va_list val)}, {"%s", printf_string(va_list val)},
+	{"%%", printf_precentage(void)}, {"%d", printf_int(va_list args)},
+	{"%i", printf_int(va_list args)}
 	};
 
 	va_list args;
