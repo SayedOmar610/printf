@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 {
 	match m[] = {
 		{"%c", printf_char}, {"%s", printf_string},
-	{"%%", printf_percentage}, {"%d", printf_int}, {"%i", printf_int}};
+	{"%%", printf_precentage}, {"%d", printf_int}, {"%i", printf_int}};
 
 	va_list args;
 	int i = 0;
