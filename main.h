@@ -19,12 +19,12 @@ typedef struct format
 	int (*f)();
 } match;
 
+int _putchar(char c);
 int _strlen(char *s);
 int printf_char(va_list va);
 int printf_string(va_list va);
 int printf_int(va_list args);
 int printf_precentage(void);
-int _putchar(char c);
 int _printf(const char *format, ...);
 
 #endif
